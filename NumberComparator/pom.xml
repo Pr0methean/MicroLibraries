@@ -15,10 +15,32 @@
         <configuration>
           <source>7</source>
           <target>7</target>
+          <testSource>8</testSource>
+          <testTarget>8</testTarget>
         </configuration>
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>26.0-android</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>25.0-jre</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
 
 
 </project>

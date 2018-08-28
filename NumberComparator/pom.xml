@@ -3,7 +3,6 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>io.github.pr0methean.microlibraries</groupId>
   <artifactId>NumberComparator</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -41,6 +40,11 @@
       <scope>compile</scope>
     </dependency>
   </dependencies>
-
-
+  <distributionManagement>
+    <repository>
+      <id>bintray-pr0methean-Pr0metheanMaven</id>
+      <name>pr0methean-Pr0metheanMaven</name>
+      <url>https://api.bintray.com/maven/pr0methean/Pr0metheanMaven/[PACKAGE_NAME]/;publish=1</url>
+    </repository>
+  </distributionManagement>
 </project>

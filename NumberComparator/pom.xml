@@ -37,9 +37,9 @@
   </dependencies>
   <distributionManagement>
     <repository>
-      <id>bintray-pr0methean-Pr0metheanMaven</id>
-      <name>pr0methean-Pr0metheanMaven</name>
-      <url>https://api.bintray.com/maven/pr0methean/Pr0metheanMaven/[PACKAGE_NAME]/;publish=1</url>
+      <id>bintray-pr0methean-MicroLibraries</id>
+      <name>pr0methean-MicroLibraries</name>
+      <url>https://api.bintray.com/maven/pr0methean/MicroLibraries/[PACKAGE_NAME]/;publish=1</url>
     </repository>
   </distributionManagement>
 </project>

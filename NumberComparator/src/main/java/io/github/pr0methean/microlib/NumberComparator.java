@@ -10,6 +10,13 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
+/**
+ * Comparator for all numeric types. Fully supports the following types: {@link Long},
+ * {@link Integer}, {@link Short}, {@link Byte}, {@link Double}, {@link Float}, {@link BigDecimal},
+ * {@link BigInteger}, {@link AtomicInteger}, {@link AtomicLong}, and the JDK8 classes
+ * java.util.concurrent.atomic.LongAccumulator, LongAdder, DoubleAccumulator and DoubleAdder. All
+ * other types are converted to double before comparing.
+ */
 public enum NumberComparator implements Comparator<Number> {
   INSTANCE;
 

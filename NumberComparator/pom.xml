@@ -39,7 +39,7 @@
     <repository>
       <id>bintray-pr0methean-MicroLibraries</id>
       <name>pr0methean-MicroLibraries</name>
-      <url>https://api.bintray.com/maven/pr0methean/MicroLibraries/[PACKAGE_NAME]/;publish=1</url>
+      <url>https://api.bintray.com/maven/pr0methean/MicroLibraries/NumberComparator/;publish=1</url>
     </repository>
   </distributionManagement>
 </project>

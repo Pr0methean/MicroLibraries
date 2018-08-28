@@ -39,7 +39,7 @@ public class NumberComparatorTest {
       Float.valueOf(0.0f),
       BigInteger.ZERO,
       BigDecimal.ZERO,
-      new LongAccumulator(() -> 0, 0),
+      new LongAccumulator((anyLeft, anyRight) -> 0, 0),
       new AtomicLong(0),
       new AtomicInteger(0),
       new LongAdder());
@@ -50,14 +50,14 @@ public class NumberComparatorTest {
       Float.valueOf(Long.MIN_VALUE),
       BigInteger.valueOf(Long.MIN_VALUE),
       new BigDecimal(Long.MIN_VALUE),
-      new LongAccumulator(Math::min, Long.MIN_VALUE),
+      new LongAccumulator(Math::max, Long.MIN_VALUE),
       LONG_MIN_ADDER);
 
   private static final List<? extends Number> LONG_MAX_VALUES = ImmutableList.of(
       Long.valueOf(Long.MAX_VALUE),
       BigInteger.valueOf(Long.MAX_VALUE),
       new BigDecimal(Long.MAX_VALUE),
-      new LongAccumulator(Math::max, Long.MAX_VALUE),
+      new LongAccumulator(Math::min, Long.MAX_VALUE),
       LONG_MAX_ADDER);
 
   private static final List<? extends Number> SORTED = ImmutableList.of(
